@@ -34,7 +34,7 @@ void scheduling_functions::fcfs()
             switch(choice)
             {
                 case 1:
-                    fcfsf();
+                    fcfs();
                     cin.clear();
                     fflush(stdin);
                     system("pause");
