@@ -34,46 +34,40 @@ int main()
         switch(choice)
         {
             case 1:
+                system("CLS");
                 sf.fcfs();
                 cin.clear();
                 fflush(stdin);
-                system("CLS");
-
                 break;
             case 2:
+                system("CLS");
                 sf.sjf();
                 cin.clear();
                 fflush(stdin);
-
-
                 break;
             case 3:
+                system("CLS");
                 sf.srt();
                 cin.clear();
                 fflush(stdin);
-
-
                 break;
             case 4:
+                system("CLS");
                 sf.ps();
                 cin.clear();
                 fflush(stdin);
-
-
                 break;
             case 5:
+                system("CLS");
                 sf.rrs();
                 cin.clear();
                 fflush(stdin);
-
-
                 break;
             case 6:
+                system("CLS");
                 sf.mlqs();
                 cin.clear();
                 fflush(stdin);
-
-
                 break;
             case 0:
                 cout << "\n\tThank you!" << endl;
