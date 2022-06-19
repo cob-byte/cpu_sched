@@ -10,75 +10,32 @@ scheduling_functions::~scheduling_functions()
     //dtor
 }
 
-
-void fcfs()
+void scheduling_functions::fcfs()
 {
 
 }
 
-void sjf()
+void scheduling_functions::sjf()
 {
 
 }
 
-void srt()
+void scheduling_functions::srt()
 {
 
 }
 
-void ps()
+void scheduling_functions::ps()
 {
 
 }
 
-void rrs()
+void scheduling_functions::rrs()
 {
 
 }
 
-void mlqs()
+void scheduling_functions::mlqs()
 {
 
-}
-
-void fcfs_findWaitingTime(int processes[], int n, int bt[])
-{
-    int wt[n], tat[n], total_wt = 0, total_tat = 0;
-    // waiting time for first process is 0
-    wt[0] = 0;
-
-    // calculating waiting time
-    for (int  i = 1; i < n ; i++ )
-        wt[i] =  bt[i-1] + wt[i-1] ;
-}
-
-
-void fcfs_findAvgTime()
-{
-    int wt[n], tat[n], total_wt = 0, total_tat = 0;
-
-    //Function to find waiting time of all processes
-    findWaitingTime(processes, n, bt, wt);
-
-    //Function to find turn around time for all processes
-    findTurnAroundTime(processes, n, bt, wt, tat);
-
-    //Display processes along with all details
-    cout << "Processes  "<< " Burst time  "
-         << " Waiting time  " << " Turn around time\n";
-
-    // Calculate total waiting time and total turn
-    // around time
-    for (int  i=0; i<n; i++)
-    {
-        total_wt = total_wt + wt[i];
-        total_tat = total_tat + tat[i];
-        cout << "   " << i+1 << "\t\t" << bt[i] <<"\t    "
-            << wt[i] <<"\t\t  " << tat[i] <<endl;
-    }
-
-    cout << "Average waiting time = "
-         << (float)total_wt / (float)n;
-    cout << "\nAverage turn around time = "
-         << (float)total_tat / (float)n;
 }

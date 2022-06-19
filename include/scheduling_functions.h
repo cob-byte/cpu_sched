@@ -7,6 +7,12 @@ class scheduling_functions
     public:
         scheduling_functions();
         virtual ~scheduling_functions();
+        void fcfs();
+        void sjf();
+        void srt();
+        void ps();
+        void rrs();
+        void mlqs();
 
     protected:
 

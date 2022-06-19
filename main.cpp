@@ -7,6 +7,7 @@ using namespace std;
 int n;
 int main()
 {
+    scheduling_functions sf;
     int choice = -1;
     cout << "\n      ~ CPU SCHEDULING CALCULATOR ~\n";
 
@@ -33,42 +34,42 @@ int main()
         switch(choice)
         {
             case 1:
-                fcfs();
+                sf.fcfs();
                 cin.clear();
                 fflush(stdin);
                 system("CLS");
 
                 break;
             case 2:
-                sjf();
+                sf.sjf();
                 cin.clear();
                 fflush(stdin);
 
 
                 break;
             case 3:
-                srt();
+                sf.srt();
                 cin.clear();
                 fflush(stdin);
 
 
                 break;
             case 4:
-                ps();
-
-
-
-                break;
-            case 5:
-                rrs();
+                sf.ps();
                 cin.clear();
                 fflush(stdin);
 
 
+                break;
+            case 5:
+                sf.rrs();
+                cin.clear();
+                fflush(stdin);
+
 
                 break;
             case 6:
-                mlqs();
+                sf.mlqs();
                 cin.clear();
                 fflush(stdin);
 

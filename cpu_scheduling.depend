@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1655624169 source:c:\users\ariza\onedrive - pamantasan ng lungsod ng maynila\2nd year\2nd sem\platform technology\cpu_scheduling\cpu_sched\src\scheduling_functions.cpp
+	"scheduling_functions.h"
+
+1655624975 c:\users\ariza\onedrive - pamantasan ng lungsod ng maynila\2nd year\2nd sem\platform technology\cpu_scheduling\cpu_sched\include\scheduling_functions.h
+
+1655625030 source:c:\users\ariza\onedrive - pamantasan ng lungsod ng maynila\2nd year\2nd sem\platform technology\cpu_scheduling\cpu_sched\main.cpp
+	<iostream>
+	<string>
+	<conio.h>
+	"scheduling_functions.h"
+
