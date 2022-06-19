@@ -13,9 +13,43 @@ scheduling_functions::~scheduling_functions()
     //dtor
 }
 //start of fcfs
+
 void scheduling_functions::fcfs()
 {
+	int choice = -1;
+    cout << "\n       ~ Round Robin Scheduling ~";
+    while(choice != 0)
+        {
+            cout << "\n=========================================" << endl;
+            cout << "\t\tOptions" << endl;
+            cout << "=========================================\n" << endl;
+            cout << "[1] - Start" << endl;
+            cout << "[0] - Back" << endl;
+            cout << "\n=========================================" << endl;
+            cout << "\n";
 
+            cout << "Choose Option: ";
+            cin >> choice;
+
+            switch(choice)
+            {
+                case 1:
+                    fcfsf();
+                    cin.clear();
+                    fflush(stdin);
+                    system("pause");
+                    system("CLS");
+                    break;
+
+                case 0:
+                    system("CLS");
+                    choice = 0;
+                    break;
+
+                default:
+                    cout << "\t\nInvalid!" << endl;
+        }
+    }
 }
 //end of fcfs
 
@@ -85,7 +119,7 @@ void check_new_arrival(int timer, int arrival[], int n, int max_proccess_index,i
         queue_updation(queue,timer,arrival,n, max_proccess_index);
     }
 }
-void rrsf()
+void rrs_function()
 {
     int n,tq, timer = 0, max_proccess_index = 0;
     float avg_wait = 0, avg_tt = 0;
@@ -113,11 +147,15 @@ void rrsf()
 
     cout << "\nEnter the Arrival Time of the Processes: \n";
     for(int i = 0; i < n; i++)
+    {
+        cout<<"AT["<<i+1<<"]:";
         cin >> arrival[i];
+    }
 
     cout << "\nEnter the Burst Time of the Processes: \n";
     for(int i = 0; i < n; i++)
     {
+        cout<<"BT["<<i+1<<"]:";
         cin >> burst[i];
         temp_burst[i] = burst[i];
     }
@@ -223,7 +261,7 @@ void scheduling_functions::rrs()
             switch(choice)
             {
                 case 1:
-                    rrsf();
+                    rrs_function();
                     cin.clear();
                     fflush(stdin);
                     system("pause");
