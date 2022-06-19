@@ -70,12 +70,12 @@ int main()
                 fflush(stdin);
                 break;
             case 0:
+                system("CLS");
                 cout << "\n\tThank you!" << endl;
                 return 0;
 
             default:
                 cout << "\t\nInvalid!" << endl;
-
         }
     }
 }
